@@ -21,10 +21,42 @@ See: [http://maven.apache.org/pom.html](http://maven.apache.org/pom.html)
 ## Basic POM
 ```xml
 <project 
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.company</groupId>
-  <artifactId>app-name</artifactId>
-  <version>1.0.0</version>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.company</groupId>
+    <artifactId>app-name</artifactId>
+    <version>1.0.0</version>
+...
+```
+
+```xml
+...
+    <dependencies>
+        <dependency>
+            <groupId>...</groupId>
+            <artifactId>...</artifactId>
+            <version>...</version>
+            <scope>compile|runtime|test</scope>
+        </dependency>
+    </dependencies>
+...
+```
+```xml
+...
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                </plugin>
+                ...
+                <plugin>
+                    ...
+                </plugin> 
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
 ```
 See: [Introduction to the POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
