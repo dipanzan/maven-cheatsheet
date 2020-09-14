@@ -4,9 +4,7 @@ Some useful commands and snippets for [Apache Maven](https://maven.apache.org/)
 
 Install Maven - Debian Based Systems
 ------------------------------------
-```console
-$ sudo apt install maven
-```
+    sudo apt install maven
 
 POM - Project Object Model
 --------------------------
@@ -52,4 +50,3 @@ Some Useful commands
     mvn dependency:tree
 #### Viewing the dependency classpath
     mvn dependency:build-classpath
-
