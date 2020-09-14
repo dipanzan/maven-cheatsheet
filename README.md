@@ -5,14 +5,19 @@ Some useful commands and snippets for [Apache Maven](https://maven.apache.org/)
 Install Maven - Debian Based Systems
 ------------------------------------
     sudo apt install maven
+See: [Installing Apache Maven](https://maven.apache.org/install.html)
 
+Getting started
+---------------
+See: [Maven Getting Started Guide](https://maven.apache.org/guides/getting-started/index.html)
+
+## Create First Maven Project
+    mvn archetype:generate -DgroupId=com.company -DartifactId=app-name -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
+    
 POM - Project Object Model
 --------------------------
-See [http://maven.apache.org/pom.html](http://maven.apache.org/pom.html)
+See: [http://maven.apache.org/pom.html](http://maven.apache.org/pom.html)
 
-## Getting started
-    mvn archetype:generate -DgroupId=com.company -DartifactId=app-name -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
-  
 ## Basic POM
 ```xml
 <project 
@@ -22,10 +27,11 @@ See [http://maven.apache.org/pom.html](http://maven.apache.org/pom.html)
   <version>1.0.0</version>
 </project>
 ```
-See [Introduction to the POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
+See: [Introduction to the POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
 
-## Standard Directory Layout
-```xml
+Standard Directory Layout
+-------------------------
+```code
 app-name
 |-- pom.xml
 `-- src
@@ -42,7 +48,8 @@ app-name
 ```
 See [Standard Directory Layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
 
-## Maven Workflow
+Maven Workflow
+--------------
 | Command | Description |
 | --- | --- |
 | mvn compile | Compile application sources | 
@@ -53,18 +60,18 @@ See [Standard Directory Layout](https://maven.apache.org/guides/introduction/int
 | mvn site | Generate website | N/A |
 | mvn clean | Remove target dir with build data |
 
-
 Some Useful commands
 --------------------
-#### Enabling Maven debug level logs
+##### Enabling Maven debug level logs
     mvn clean install –X
-#### Viewing the effective POM file
+##### Viewing the effective POM file
     mvn help:effective-pom
-#### Building a dependency tree
+##### Building a dependency tree
     mvn dependency:tree
-#### Viewing the dependency classpath
+##### Viewing the dependency classpath
     mvn dependency:build-classpath
 
-## Resources
+Resources
+---------
 * [Book: Maven Essentials](https://www.amazon.com/Maven-Essentials-Prabath-Siriwardena/dp/178398676X)
 * [Book: Apache Maven Cookbook](https://www.amazon.com/Apache-Maven-Cookbook-Raghuram-Bharathan/dp/1785286129)
