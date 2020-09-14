@@ -12,7 +12,7 @@ Getting started
 See: [Maven Getting Started Guide](https://maven.apache.org/guides/getting-started/index.html)
 
 ## Create First Maven Project
-    mvn archetype:generate -DgroupId=com.company -DartifactId=app-name -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
+    mvn archetype:generate -DgroupId=com.company -DartifactId=app-name -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
     
 POM - Project Object Model
 --------------------------
