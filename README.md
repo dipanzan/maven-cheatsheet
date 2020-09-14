@@ -46,7 +46,7 @@ app-name
                 `-- company
                     `-- AppTest.java
 ```
-See [Standard Directory Layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
+See: [Standard Directory Layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
 
 Maven Workflow
 --------------
