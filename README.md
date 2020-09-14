@@ -13,10 +13,8 @@ POM - Project Object Model
 See [http://maven.apache.org/pom.html](http://maven.apache.org/pom.html)
 
 ## Getting started
-```console
-$ mvn archetype:generate -DgroupId=com.company -DartifactId=app-name -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
-```
-
+    mvn archetype:generate -DgroupId=com.company -DartifactId=app-name -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
+  
 ## Basic POM
 ```xml
 <project 
@@ -28,8 +26,8 @@ $ mvn archetype:generate -DgroupId=com.company -DartifactId=app-name -Darchetype
 ```
 
 ## Standard Project Structure
-```console
-my-app
+```xml
+app-name
 |-- pom.xml
 `-- src
     |-- main
@@ -47,19 +45,11 @@ my-app
 Some Useful commands
 --------------------
 #### Enabling Maven debug level logs
-```console
-$ mvn clean install –X
-```
+    mvn clean install –X
 #### Viewing the effective POM file
-```console
-$ mvn help:effective-pom
-```
+    mvn help:effective-pom
 #### Building a dependency tree
-```console
-
-$ mvn dependency:tree
-```
+    mvn dependency:tree
 #### Viewing the dependency classpath
-```console
-$ mvn dependency:build-classpath
-```
+    mvn dependency:build-classpath
+
