@@ -1,26 +1,51 @@
 Maven Cheat Sheet
 =================
-
 Some useful commands and snippets for [Apache Maven](https://maven.apache.org/)
+
+Install Maven - Debian Based Systems
+------------------------------------
+```console
+$ sudo apt install maven
+```
 
 POM - Project Object Model
 --------------------------
 See [http://maven.apache.org/pom.html](http://maven.apache.org/pom.html)
 
-## Basic POM
+## Getting started
+```console
+$ mvn archetype:generate -DgroupId=com.company -DartifactId=app-name -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
+```
 
+## Basic POM
 ```xml
 <project 
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.company</groupId>
-  <artifactId>project-name</artifactId>
+  <artifactId>app-name</artifactId>
   <version>1.0.0</version>
 </project>
 ```
 
+## Standard Project Structure
+```console
+my-app
+|-- pom.xml
+`-- src
+    |-- main
+    |   `-- java
+    |       `-- com
+    |           `-- company
+    |               `-- App.java
+    `-- test
+        `-- java
+            `-- com
+                `-- company
+                    `-- AppTest.java
+```
+
 Some Useful commands
 --------------------
-
 #### Enabling Maven debug level logs
 ```console
 $ mvn clean install –X
@@ -38,5 +63,3 @@ $ mvn dependency:tree
 ```console
 $ mvn dependency:build-classpath
 ```
-
-
