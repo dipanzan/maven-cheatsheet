@@ -16,7 +16,7 @@ See: [Maven Getting Started Guide](https://maven.apache.org/guides/getting-start
     
 POM - Project Object Model
 --------------------------
-See: [http://maven.apache.org/pom.html](http://maven.apache.org/pom.html)
+See: [Project Object Model](http://maven.apache.org/pom.html)
 
 ## Basic POM
 ```xml
