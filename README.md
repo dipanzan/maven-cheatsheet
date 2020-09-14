@@ -64,3 +64,7 @@ Some Useful commands
     mvn dependency:tree
 #### Viewing the dependency classpath
     mvn dependency:build-classpath
+
+## Resources
+* [Book: Maven Essentials](https://www.amazon.com/Maven-Essentials-Prabath-Siriwardena/dp/178398676X)
+* [Book: Apache Maven Cookbook](https://www.amazon.com/Apache-Maven-Cookbook-Raghuram-Bharathan/dp/1785286129)
