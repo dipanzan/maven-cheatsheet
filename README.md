@@ -22,8 +22,9 @@ See [http://maven.apache.org/pom.html](http://maven.apache.org/pom.html)
   <version>1.0.0</version>
 </project>
 ```
+See [Introduction to the POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
 
-## Standard Project Structure
+## Standard Directory Layout
 ```xml
 app-name
 |-- pom.xml
@@ -39,6 +40,19 @@ app-name
                 `-- company
                     `-- AppTest.java
 ```
+See [Standard Directory Layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
+
+## Maven Workflow
+| Command | Description |
+| --- | --- |
+| mvn compile | Compile application sources | 
+| mvn test-compile | Compile test sources |
+| mvn test | Compile test sources and run unit tests |
+| mvn package | Generate a JAR | N/A |
+| mvn install | Install JAR in local repository |
+| mvn site | Generate website | N/A |
+| mvn clean | Remove target dir with build data |
+
 
 Some Useful commands
 --------------------
