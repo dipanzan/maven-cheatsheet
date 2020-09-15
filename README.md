@@ -26,11 +26,11 @@ See: [Introduction to the POM](https://maven.apache.org/guides/introduction/intr
     <groupId>com.company</groupId>
     <artifactId>app-name</artifactId>
     <version>1.0.0</version>
-...
+    ...
 ```
 ##### Dependencies
 ```xml
-...
+    ...
     <dependencies>
         <dependency>
             <groupId>...</groupId>
@@ -39,10 +39,11 @@ See: [Introduction to the POM](https://maven.apache.org/guides/introduction/intr
             <scope>compile|runtime|test</scope>
         </dependency>
     </dependencies>
-...
+    ...
 ```
 ##### Plugins
 ```xml
+    ...
     <build>
         ...
         <pluginManagement>
@@ -87,6 +88,7 @@ See: [Introduction to the POM](https://maven.apache.org/guides/introduction/intr
         </testResources>
         ...
     </build>
+    ...
 </project>
 ```
 See: [Project Object Model](http://maven.apache.org/pom.html)
