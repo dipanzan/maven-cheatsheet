@@ -28,7 +28,7 @@ See: [Project Object Model](http://maven.apache.org/pom.html)
     <version>1.0.0</version>
 ...
 ```
-
+##### Dependencies
 ```xml
 ...
     <dependencies>
@@ -44,6 +44,11 @@ See: [Project Object Model](http://maven.apache.org/pom.html)
 ```xml
 ...
     <build>
+        ...
+```
+##### Plugins
+```xml
+        ...
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -56,7 +61,38 @@ See: [Project Object Model](http://maven.apache.org/pom.html)
                     ...
                 </plugin> 
             </plugins>
-        </pluginManagement>
+    </pluginManagement>
+        ...
+```
+##### Directories
+```xml
+        ...
+        <directory>${project.basedir}/target</directory>
+        <outputDirectory>${project.build.directory}/classes</outputDirectory>
+        <finalName>${project.artifactId}-${project.version}</finalName>
+        <testOutputDirectory>${project.build.directory}/test-classes</testOutputDirectory>
+        <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+        <scriptSourceDirectory>${project.basedir}/src/main/scripts</scriptSourceDirectory>
+        <testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>
+        ...
+```
+##### Resources
+```xml
+        ...
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/resources</directory>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>${project.basedir}/src/test/resources</directory>
+            </testResource>
+        </testResources>
+        ...
+```
+```xml
+    ...
     </build>
 </project>
 ```
