@@ -16,8 +16,8 @@ See: [Maven Getting Started Guide](https://maven.apache.org/guides/getting-start
     
 POM - Project Object Model
 --------------------------
-See: [Project Object Model](http://maven.apache.org/pom.html)
-
+See: [Project Object Model](http://maven.apache.org/pom.html)  
+The basic POM is inherited from the super POM which is the system wide POM for any Maven project unless a parent POM is supplied. Default repository: [Maven Central](http://repo.maven.apache.org/maven2)
 ## Basic POM
 ```xml
 <project 
