@@ -41,14 +41,9 @@ See: [Introduction to the POM](https://maven.apache.org/guides/introduction/intr
     </dependencies>
 ...
 ```
-###### Build Start
-```xml
-...
-    <build>
-        ...
-```
 ##### Plugins
 ```xml
+    <build>
         ...
         <pluginManagement>
             <plugins>
@@ -90,10 +85,6 @@ See: [Introduction to the POM](https://maven.apache.org/guides/introduction/intr
                 <directory>${project.basedir}/src/test/resources</directory>
             </testResource>
         </testResources>
-        ...
-```
-###### Build End
-```xml
         ...
     </build>
 </project>
