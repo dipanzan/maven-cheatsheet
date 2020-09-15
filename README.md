@@ -21,8 +21,9 @@ mvn archetype:generate -B
                     -DartifactId=app-name
                     -Dversion=1.0.0
 ```
-    
-    
+##### Archetype help command
+    mvn archetype:help -Ddetail=true -Dgoal=generate
+
 POM - Project Object Model
 --------------------------
 The basic POM is inherited from the super POM which is the system wide POM for any Maven project unless a parent POM is supplied. Default repository: [Maven Central](http://repo.maven.apache.org/maven2)  
