@@ -134,6 +134,8 @@ Some Useful commands
     mvn dependency:tree
 ##### Viewing the dependency classpath
     mvn dependency:build-classpath
+##### Find inconsistent dependencies
+    mvn dependency:analyze
 
 Resources
 ---------
