@@ -146,6 +146,8 @@ Some Useful commands
     mvn dependency:build-classpath
 ##### Find inconsistent dependencies
     mvn dependency:analyze
+##### Copy dependencies from repository to local project directory
+    mvn dependency:copy-dependencies
 
 Resources
 ---------
